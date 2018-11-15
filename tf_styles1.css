@@ -5,8 +5,8 @@
    Tutorial 5
    Tutorial Case
    
-   Author:   
-   Date:     
+    Author: Mickal Austin
+   Date:  11.15.18   
    
    Filename: tf_styles1.css
    
@@ -144,10 +144,31 @@ body > footer {
 }
 
 /* Pulldown Menu Styles */
-
-
+ul.submenu {
+    display: none;
+}
+a.submenuTitle:hover+ul.submenu,
+ul.submenu:hover {
+    display: block;
+}
 
 
 /* New Styles Added Below */
 
+/* ============================
+   Mobile Styles: 0px to 480px
+   ============================
+*/
+@media only screen and (max-width: 480px) {}
 
+/* ============================
+   Tablet Styles: 481px and more
+   ============================
+*/
+@media only screen and (min-width: 481px) {}
+
+/* ============================
+   Desktop Styles: 769 and more 
+   ============================
+*/
+@media only screen and (min-width: 769px) {}
